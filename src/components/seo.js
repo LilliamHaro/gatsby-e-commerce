@@ -87,6 +87,10 @@ function SEO({ description, lang, meta, keywords, title, image }) {
         rel: `stylesheet`,
         href: `https://use.fontawesome.com/releases/v5.8.1/css/all.css`
       },
+      {
+        rel: `stylesheet`,
+        href: `https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css`
+      },
     ]}
 
     />

@@ -1,4 +1,4 @@
-header {
+.all-container header {
     background: rgba(0,0,0,0.5);
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@ header {
 .header_functions li {
     background: rgba(255,255,255,0.5);
     border-radius: 50%;
-    padding: 8px;
+    padding: 8px 12px;
 }
 .header_functions li:last-child{
     border-radius: 15px;
@@ -38,9 +38,22 @@ header {
 header li {
     list-style: none;
     margin-left: 20px;
+    color: #000;
+    cursor: pointer;
 }
 
 header li a {
     text-decoration: none;
     color: #000;
+}
+
+.header_products_option {
+    position: relative;
+}
+.header_products_menu {
+    position: absolute;
+    top: 150%;
+    left: 0;
+    background: #fff;
+    padding: 20px;
 }

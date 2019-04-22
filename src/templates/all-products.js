@@ -63,7 +63,9 @@ const DashboardPage = props => {
   return (
     <Layout>
       <SEO title="Zona Productos" description="Descripcion de Productos" image="https://circuit.com.pe/test-nextjs/static/mor.jpg"/>
-      <h1>Productos</h1>
+
+      <div className="all_products_container container">
+      <h1 className="text-center">Productos</h1>
     {console.log(pageContext.allProducts)}
     <ul className="all_products_list">
       {
@@ -77,19 +79,10 @@ const DashboardPage = props => {
         ))
       }
 
-      <br/>
-      <Link to={`/productos/zona-holistica`}>
-                <p>zona holistica</p>
-              </Link>
-        <br/>
-        <Link to={`/productos/zona-pureza`}>
-                <p>zona holistica</p>
-              </Link>
-            <br/>
-            <Link to={`/productos/zona-pureza`}>
-                <p>zona holistica</p>
-              </Link>
+     
     </ul>
+      </div>
+      
     </Layout>
   )
 }
